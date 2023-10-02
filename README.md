@@ -23,29 +23,29 @@
 
 ### CRUD Operations
 Functions in `lib/operations.py`:
-`create_wages_data` CREATE: insert a new country's data
-`read_all_wages_data` READ: read all country's data
-`read_wages_data_by_country` READ: read a given country's data
-`update_wages_data` UPDATE: update a given country's data
-`delete_wages_data` DELETE: delete a given country's data
+* `create_wages_data` CREATE: insert a new country's data
+* `read_all_wages_data` READ: read all country's data
+* `read_wages_data_by_country` READ: read a given country's data
+* `update_wages_data` UPDATE: update a given country's data
+* `delete_wages_data` DELETE: delete a given country's data
 
 ### CRUD in main.py
-* Load csv data into SQLite database:
+* **Load csv data into SQLite database**:
 load("Development of Average Annual Wages.csv")
 
-* Create new entry for the country China:
+* **Create new entry for the country China**:
 create_wages_data("China", 10000, 15000, 20000, 22000)
 
-* Update Iceland's data:
+* **Update Iceland's data**:
 update_wages_data("Iceland", 20000, 25000, 30000, 32000)
 
-* Print China's data
+* **Print China's data**
 read_wages_data_by_country("China")
 
-* Delete the data for China
+* **Delete the data for China**
 delete_wages_data("China")
 
-* Close the connection
+* **Close the connection**
 close_connection()
 
 ### Results
