@@ -22,7 +22,7 @@
 **load** function in **lib/loadData.py** would load the data from the csv file into a SQLite database and create a .db file
 
 ### CRUD Operations
-Functions in **lib/operations.py**:
+Functions in `lib/operations.py`:
 **create_wages_data** CREATE: insert a new country's data
 **read_all_wages_data** READ: read all country's data
 **read_wages_data_by_country** READ: read a given country's data
