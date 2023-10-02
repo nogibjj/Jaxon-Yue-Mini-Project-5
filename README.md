@@ -31,22 +31,22 @@ Functions in `lib/operations.py`:
 
 ### CRUD in main.py
 * **Load csv data into SQLite database**:
-load("Development of Average Annual Wages.csv")
+`load("Development of Average Annual Wages.csv")`
 
 * **Create new entry for the country China**:
-create_wages_data("China", 10000, 15000, 20000, 22000)
+`create_wages_data("China", 10000, 15000, 20000, 22000)`
 
 * **Update Iceland's data**:
-update_wages_data("Iceland", 20000, 25000, 30000, 32000)
+`update_wages_data("Iceland", 20000, 25000, 30000, 32000)`
 
 * **Print China's data**
-read_wages_data_by_country("China")
+`read_wages_data_by_country("China")`
 
 * **Delete the data for China**
-delete_wages_data("China")
+`delete_wages_data("China")`
 
 * **Close the connection**
-close_connection()
+`close_connection()`
 
 ### Results
 Successful CRUD Operations
