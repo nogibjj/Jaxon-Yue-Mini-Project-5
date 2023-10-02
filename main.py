@@ -1,11 +1,11 @@
-from lib.operations import (
+from mylib.operations import (
     close_connection,
     create_wages_data,
     update_wages_data,
     delete_wages_data,
     read_wages_data_by_country,
 )
-from lib.loadData import load
+from mylib.loadData import load
 
 
 def main():
