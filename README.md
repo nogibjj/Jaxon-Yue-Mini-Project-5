@@ -3,7 +3,7 @@
 * This repository includes the components for Mini-Project 5 - Python Script interacting with SQL Database.
 
 ### Goal
-* Builds an ETL-Query pipeline by loading the average annual wages dataset, connecting to a SQL database, and performing CRUD operations
+* Builds an ETL-Query pipeline by loading the average annual wages dataset, connecting to a SQL database, and performing CRUD operations.
 * Includes SQL queries that **create a new data entry**, **read all countries / individual country's data**, **update data** and **delete data**.
 
 ### Key elements in the repository are:
