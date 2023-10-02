@@ -19,15 +19,15 @@
 * GitHub Actions
 
 ### Database Connection
-**load** function in **lib/loadData.py** would load the data from the csv file into a SQLite database and create a .db file
+`load` function in `lib/loadData.py` would load the data from the csv file into a SQLite database and create a .db file
 
 ### CRUD Operations
 Functions in `lib/operations.py`:
-**create_wages_data** CREATE: insert a new country's data
-**read_all_wages_data** READ: read all country's data
-**read_wages_data_by_country** READ: read a given country's data
-**update_wages_data** UPDATE: update a given country's data
-**delete_wages_data** DELETE: delete a given country's data
+`create_wages_data` CREATE: insert a new country's data
+`read_all_wages_data` READ: read all country's data
+`read_wages_data_by_country` READ: read a given country's data
+`update_wages_data` UPDATE: update a given country's data
+`delete_wages_data` DELETE: delete a given country's data
 
 ### CRUD in main.py
 * Load csv data into SQLite database:
@@ -49,5 +49,9 @@ delete_wages_data("China")
 close_connection()
 
 ### Results
+Successful CRUD Operations
+<img width="793" alt="Screenshot 2023-10-02 at 12 28 06 PM" src="https://github.com/nogibjj/Jaxon-Yue-Mini-Project-5/assets/70416390/3b70b8ac-ad57-4318-849f-37e526b5fe9e">
+
 Using Github Actions, I have passed make format, make lint, and make test as shown below.
-<img width="1154" alt="Screenshot 2023-09-12 at 5 59 55 PM" src="https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/assets/70416390/71c80522-d698-4d17-8e95-acdd7be03671">
+<img width="809" alt="Screenshot 2023-10-02 at 12 27 34 PM" src="https://github.com/nogibjj/Jaxon-Yue-Mini-Project-5/assets/70416390/fae9bcfb-9367-4a61-a37c-47a8c500c928">
+
