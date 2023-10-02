@@ -1,6 +1,6 @@
 # IDS 706 Mini Project 5 [![CI](https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/actions/workflows/cicd.yml)
 ### Overview
-* This repository includes the components for Mini-Project 5 - Python Script interacting with SQL Database
+* This repository includes the components for Mini-Project 5 - Python Script interacting with SQL Database.
 
 ### Goal
 * Builds an ETL-Query pipeline by loading the average annual wages dataset, connecting to a SQL database, and performing CRUD operations
