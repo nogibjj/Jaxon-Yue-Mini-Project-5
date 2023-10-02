@@ -18,7 +18,7 @@ def main():
     update_wages_data("Iceland", 20000, 25000, 30000, 32000)
 
     # Print population data
-    read_wages_data_by_country("Iceland")
+    read_wages_data_by_country("China")
 
     # Delete population data for "Country1"
     delete_wages_data("China")
