@@ -3,9 +3,10 @@ from lib.operations import (
     create_wages_data,
     update_wages_data,
     delete_wages_data,
-    read_wages_data_by_country
+    read_wages_data_by_country,
 )
 from lib.loadData import load
+
 
 def main():
     # Load the dataset into the SQLite database
@@ -26,6 +27,7 @@ def main():
     # Close the connection
     close_connection()
     return 1
+
 
 if __name__ == "__main__":
     main()

@@ -1,18 +1,15 @@
-# IDS 706 Mini Project 3 [![CI](https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/actions/workflows/cicd.yml)
+# IDS 706 Mini Project 5 [![CI](https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/actions/workflows/cicd.yml)
 ### Overview
-* This repository includes the components for Mini-Project 3 - Polars Descriptive Statistics Script
-Requirements.
+* This repository includes the components for Mini-Project 5 - Python Script interacting with SQL Database
 
 ### Goal
-* It transforms my previous project with Pandas into generating descriptive statistics using Polars.
-* It contains a series of EDA on a dataset related to the development of average annual wages across various countries in the world.
-* The EDA process includes getting essential statistics such as **mean**, **median**, and **standard deviation**, as well as a quick data visualization on the **growth of the average annual wages**.
-* The summary statistics and data visualization can be found in the **Summary Report** notebook file
-* This repo also contains respective **tests** to check whether the statistics calculated in the EDA process **match with the real data points**.
+* Builds an ETL-Query pipeline by loading the average annual wages dataset, connecting to a SQL database, and performing CRUD operations
+* Includes SQL queries that **create a new data entry**, **read all countries / individual country's data**, **update data** and **delete data**.
 
 ### Key elements in the repository are:
-* Development of average annual wages.csv
-* Summary Report.ipynb
+* Development of Average Annual Wages.csv
+* lib/loadData.py (for loading the csv file into a SQL database)
+* lib/operations.py (for CRUD operations)
 * Makefile
 * requirements.txt
 * Dockerfile
@@ -21,10 +18,36 @@ Requirements.
 * test_main.py
 * GitHub Actions
 
+### Database Connection
+**load** function in **lib/loadData.py** would load the data from the csv file into a SQLite database and create a .db file
+
+### CRUD Operations
+Functions in **lib/operations.py**:
+**create_wages_data** CREATE: insert a new country's data
+**read_all_wages_data** READ: read all country's data
+**read_wages_data_by_country** READ: read a given country's data
+**update_wages_data** UPDATE: update a given country's data
+**delete_wages_data** DELETE: delete a given country's data
+
+### CRUD in main.py
+* Load csv data into SQLite database:
+load("Development of Average Annual Wages.csv")
+
+* Create new entry for the country China:
+create_wages_data("China", 10000, 15000, 20000, 22000)
+
+* Update Iceland's data:
+update_wages_data("Iceland", 20000, 25000, 30000, 32000)
+
+* Print China's data
+read_wages_data_by_country("China")
+
+* Delete the data for China
+delete_wages_data("China")
+
+* Close the connection
+close_connection()
+
 ### Results
 Using Github Actions, I have passed make format, make lint, and make test as shown below.
 <img width="1154" alt="Screenshot 2023-09-12 at 5 59 55 PM" src="https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-3/assets/70416390/71c80522-d698-4d17-8e95-acdd7be03671">
-
-### References
-Link to Mini project 2, where this project was adapted from
-https://github.com/nogibjj/Jaxon-Yue-IDS-706-Mini-Project-2
